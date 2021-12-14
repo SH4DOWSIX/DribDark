@@ -167,6 +167,7 @@ span.artist-artistVerifiedBadge-badge svg > path:last-of-type {
 
 .main-navBar-navBarLinkActive {
     background: var(--spice-sidebar);
+
 }
 
 .main-contextMenu-menu {
@@ -323,7 +324,7 @@ html {
 }
 
 .main-navBar-navBarItem {
-    padding: 0 8px;
+    padding: 0 20px;
 }
 
 #spicetify-show-list >* {
@@ -340,14 +341,14 @@ html {
 
 .main-rootlist-expandArrow {
     position: absolute;
-    top: -2px;
+    top: 1px;
     right: 14px;
     width: 14px;
     height: 14px;
     color: var(--spice-sidebar-text) !important;
-    background-color: var(--spice-sidebar);
+/*  background-color: var(--spice-sidebar);
     border-radius: 50%;
-    box-shadow: 0 0 0 2px var(--spice-sidebar);
+    box-shadow: 0 0 0 2px var(--spice-sidebar);*/
     opacity: 0;
 }
 
@@ -486,8 +487,8 @@ html.sidebar-hide-text .main-rootlist-statusIcons {
     align-items: center;
     border-radius: 4px;
     display: flex;
-    height: 14px;
-    padding: 0 14px;
+    height: 16px;
+    padding: 0 16px;
 	
 }
 
@@ -520,20 +521,27 @@ html.sidebar-hide-text .main-rootlist-rootlistItem {
     height: 2px;
 }
 
+
+
 .main-navBar-navBarLink {
-    padding: 6px 16px 20px 0;
-    height: 20px;
+    padding: 8px 16px 8px 0;
+    height: 25px;
 }
 
-.main-navBar-navBarItem .collection-active-icon,
-.main-navBar-navBarItem .collection-icon,
-.main-navBar-navBarItem .home-active-icon,
 .main-navBar-navBarItem .home-icon,
-.main-navBar-navBarItem .search-active-icon,
-.main-navBar-navBarItem .search-icon {
+.main-navBar-navBarItem .search-icon,
+.main-navBar-navBarItem .collection-icon {
+	flex: 0 0 auto;
+    margin-right: 8px;
+	fill: var(--spice-text);
+}
+
+.main-navBar-navBarItem .home-active-icon,
+.main-navBar-navBarItem .collection-active-icon,
+.main-navBar-navBarItem .search-active-icon {
     flex: 0 0 auto;
     margin-right: 8px;
-	
+	fill: var(--spice-text);
 }
 
 .main-collectionLinkButton-icon,
@@ -691,19 +699,25 @@ li.GlueDropTarget {
 .main-createPlaylistButton-icon,
 .main-collectionLinkButton-icon,
 .main-createPlaylistButton-icon {
-    height: 40px;
+    height: 32px;
 }
 
-.main-likedSongsButton-likedSongsIcon svg,
-.main-yourEpisodesButton-yourEpisodesIcon svg,
-.main-createPlaylistButton-createPlaylistIcon svg {
-    fill: var(--spice-sidebar-text);
+.main-likedSongsButton-likedSongsIcon svg {
+	fill: var(--spice-button);
     width: 32px;
     height: 32px;
 }
-.main-yourEpisodesButton-yourEpisodesIcon svg path {
-    fill: var(--spice-sidebar-text);
+
+
+.main-yourEpisodesButton-yourEpisodesIcon svg,
+.main-createPlaylistButton-createPlaylistIcon svg {
+    fill: var(--spice-text);
+    width: 32px;
+    height: 32px;
 }
+/*.main-yourEpisodesButton-yourEpisodesIcon svg path {
+    fill: var(--spice-text);
+}*/
 
 /** Grid */
 .Root__top-container {
@@ -756,16 +770,16 @@ span.main-userWidget-displayName,
 }
 
 div.GlueDropTarget.personal-library  {
-    padding: 0 8px;
+    padding: 0 20px;
 }
 div.GlueDropTarget.personal-library >* {
-    padding: 6px 16px 20px 0;
-    height: 20px;
+    padding: 8px 16px 8px 0;
+    height: 25px;
     border-radius: 4px;
 }
 
 div.GlueDropTarget.personal-library >*.active {
-    background: var(--spice-button);
+    background: var(--spice-sidebar);
 }
 
 /** Big cover, small cover */
@@ -889,7 +903,7 @@ html.right-expanded-cover.buddyfeed-visible .main-coverSlotExpanded-container {
     z-index: 4;
 }
 
-:root .Root__nav-bar .main-rootlist-rootlist .os-content::before {
+:root .Root__nav-bar .main-rootlist-rootlist::before {
   content: "Playlists";
   visibility: visible;
   width: unset;
@@ -900,7 +914,7 @@ html.right-expanded-cover.buddyfeed-visible .main-coverSlotExpanded-container {
   text-align: center;
   font-weight: 700;
   color: var(--spice-sidebar-text);
-  padding: 6px 16px 0 0;
+  padding: 18px 8px 8px 8px;
 }
 
 .main-type-viola {
@@ -994,4 +1008,14 @@ h2 {
     width: 32px !important;
     height: 32px !important;
     color: var(--spice-button);
+}
+
+.main-entityHeader-imageContainer {
+    height: 80px;
+    width: 80px;
+}
+
+.main-actionBar-ActionBar {
+    padding-bottom: 0px;
+    padding-top: 19px;
 }
