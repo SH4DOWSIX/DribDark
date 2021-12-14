@@ -18,7 +18,7 @@ Add these lines to config-xpui.ini
 [Patch]
 ; Playlist Height!
 xpui.js_find_8008 = ,(\w+=)32,
-xpui.js_repl_8008 = ,${1}14,
+xpui.js_repl_8008 = ,${1}16,
 ; TrackList Height!
 xpui.js_find_8009 = ,B=56,
 xpui.js_repl_8009 = ,B=32,
