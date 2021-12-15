@@ -3,8 +3,8 @@ Modified Dribbblish theme.
 Some code used from Comfy.
 
 
-
-<img src="https://i.imgur.com/Xx8gLwQ.jpeg" alt="img" align="center" width="500px">
+### DribDark
+![base](Spotify_ONyU2GV7DU.jpg)
 
 ## Install
 Install Dribbblish from here.
