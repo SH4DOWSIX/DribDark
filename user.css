@@ -1031,3 +1031,8 @@ div.GlueDropTarget.personal-library >*.active {
     display: flex;
     padding: 1px 16px 4px 16px;
 }
+
+.main-likedSongsButton-likedSongsIcon svg {
+    fill: red;
+}
+
