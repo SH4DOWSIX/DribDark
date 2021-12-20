@@ -113,13 +113,6 @@ input {
     background-color: var(--spice-main);
 }
 
-.main-entityHeader-shadow,
-.main-contextMenu-menu,
-.connect-device-list-container {
-    box-shadow: 0 4px 20px #21212130;
-	background: var(--spice-sidebar);
-}
-
 .main-trackList-playingIcon {
     filter: grayscale(1);
 }
@@ -142,10 +135,6 @@ span.artist-artistVerifiedBadge-badge svg > path:last-of-type {
     height: 100vh;
 }
 
-.main-entityHeader-withBackgroundImage .main-entityHeader-headerText {
-    justify-content: center;
-}
-
 .main-entityHeader-container.main-entityHeader-nonWrapped.main-entityHeader-withBackgroundImage {
     padding-left: 9%;
 }
@@ -160,26 +149,6 @@ span.artist-artistVerifiedBadge-badge svg > path:last-of-type {
 }
 
 /** Hightlight selected playlist */
-.main-rootlist-rootlistItemLink.main-rootlist-rootlistItemLinkActive {
-    background: var(--spice-sidebar);
-    border-radius: 4px;
-}
-
-.main-navBar-navBarLinkActive {
-    background: var(--spice-sidebar);
-
-}
-
-.main-contextMenu-menu {
-    background-color: var(--spice-sidebar);
-}
-
-.main-contextMenu-menuHeading,
-.main-contextMenu-menuItemButton,
-.main-contextMenu-menuItemButton:not(.main-contextMenu-disabled):focus,
-.main-contextMenu-menuItemButton:not(.main-contextMenu-disabled):hover {
-    color: var(--spice-sidebar-text);
-}
 
 .main-playPauseButton-button {
     background-color: var(--spice-button);
@@ -275,20 +244,6 @@ span.artist-artistVerifiedBadge-badge svg > path:last-of-type {
     background-color: unset;
 }
 
-.main-nowPlayingBar-container {
-    border-radius: 0 0 var(--main-corner-radius) var(--main-corner-radius);
-    background-color: unset;
-    background: radial-gradient(ellipse at right 50% bottom -80px, rgba(var(--spice-rgb-button), 0.55), var(--spice-player-bar) 60%);
-    border-top: 0;
-    min-width: 518px;
-}
-
-.main-connectBar-connectBar {
-    border-radius: 0 0 var(--main-corner-radius) var(--main-corner-radius);
-    border: 2px solid var(--spice-sidebar);
-    border-top: 0;
-    color: var(--spice-sidebar-text);
-}
 
 .Root__nav-bar {
     height: 100%;
@@ -323,9 +278,6 @@ html {
     color: var(--spice-sidebar-text)
 }
 
-.main-navBar-navBarItem {
-    padding: 0 20px;
-}
 
 #spicetify-show-list >* {
     padding: 0 8px;
@@ -339,18 +291,6 @@ html {
     color: var(--spice-sidebar-text);
 }
 
-.main-rootlist-expandArrow {
-    position: absolute;
-    top: 1px;
-    right: 14px;
-    width: 14px;
-    height: 14px;
-    color: var(--spice-sidebar-text) !important;
-/*  background-color: var(--spice-sidebar);
-    border-radius: 50%;
-    box-shadow: 0 0 0 2px var(--spice-sidebar);*/
-    opacity: 0;
-}
 
 li.GlueDropTarget:hover .main-rootlist-expandArrow {
     opacity: 1;
@@ -483,28 +423,6 @@ html.sidebar-hide-text .main-rootlist-statusIcons {
     display: none;
 }
 
-.main-rootlist-rootlistItem a {
-    align-items: center;
-    border-radius: 4px;
-    display: flex;
-    height: 16px;
-    padding: 0 16px;
-	
-}
-
-img.playlist-picture {
-	display: none;
-    width: 14px;
-    height: 14px;
-    flex: 0 0 14px;
-    background-size: cover;
-    background-position: center;
-    border-radius: 50%;
-}
-
-.main-rootlist-rootlistItem a span {
-    margin-left: 0px;
-}
 
 .main-rootlist-rootlistItem {
     padding-left: calc(var(--indentation)*var(--left-sidebar-item-indentation-width));
@@ -522,28 +440,6 @@ html.sidebar-hide-text .main-rootlist-rootlistItem {
 }
 
 
-
-.main-navBar-navBarLink {
-    padding: 8px 16px 8px 0;
-    height: 25px;
-}
-
-.main-navBar-navBarItem .home-icon,
-.main-navBar-navBarItem .search-icon,
-.main-navBar-navBarItem .collection-icon {
-	flex: 0 0 auto;
-    margin-right: 8px;
-	fill: var(--spice-text);
-}
-
-.main-navBar-navBarItem .home-active-icon,
-.main-navBar-navBarItem .collection-active-icon,
-.main-navBar-navBarItem .search-active-icon {
-    flex: 0 0 auto;
-    margin-right: 8px;
-	fill: var(--spice-text);
-}
-
 .main-collectionLinkButton-icon,
 .main-createPlaylistButton-icon,
 .main-collectionLinkButton-icon {
@@ -557,14 +453,6 @@ li.GlueDropTarget {
 /** OS-specific window controls dodge */
 .spotify__os--is-windows .main-navBar-navBar {
     padding-top: calc(var(--os-windows-icon-dodge) * 24px);
-}
-
-.spotify__container--is-desktop:not(.fullscreen).spotify__os--is-windows .main-navBar-entryPoints {
-    padding-top: 40px;
-}
-
-.spotify__os--is-windows .main-buddyFeed-header {
-    padding-top: 32px;
 }
 
 .spotify__container--is-desktop.spotify__os--is-windows[dir=ltr] .main-topBar-container {
@@ -696,28 +584,6 @@ li.GlueDropTarget {
     background: unset !important;
 }
 
-.main-createPlaylistButton-icon,
-.main-collectionLinkButton-icon,
-.main-createPlaylistButton-icon {
-    height: 32px;
-}
-
-.main-likedSongsButton-likedSongsIcon svg {
-	fill: var(--spice-button);
-    width: 32px;
-    height: 32px;
-}
-
-
-.main-yourEpisodesButton-yourEpisodesIcon svg,
-.main-createPlaylistButton-createPlaylistIcon svg {
-    fill: var(--spice-text);
-    width: 32px;
-    height: 32px;
-}
-/*.main-yourEpisodesButton-yourEpisodesIcon svg path {
-    fill: var(--spice-text);
-}*/
 
 /** Grid */
 .Root__top-container {
@@ -769,18 +635,6 @@ span.main-userWidget-displayName,
     --left-sidebar-padding-right: 24px;
 }
 
-div.GlueDropTarget.personal-library  {
-    padding: 0 20px;
-}
-div.GlueDropTarget.personal-library >* {
-    padding: 8px 16px 8px 0;
-    height: 25px;
-    border-radius: 4px;
-}
-
-div.GlueDropTarget.personal-library >*.active {
-    background: var(--spice-sidebar);
-}
 
 /** Big cover, small cover */
 .main-coverSlotExpanded-container {
@@ -853,10 +707,6 @@ html.right-expanded-cover.buddyfeed-visible .main-coverSlotExpanded-container {
     background-color: rgba(var(--spice-rgb-selected-row), .1) !important;
 }
 
-.connect-device-list-item {
-    background-color: var(--spice-sidebar);
-}
-
 .connect-device-list-item:focus,
 .connect-device-list-item:hover {
     background-color: rgba(var(--spice-rgb-selected-row), .3);
@@ -903,119 +753,281 @@ html.right-expanded-cover.buddyfeed-visible .main-coverSlotExpanded-container {
     z-index: 4;
 }
 
-:root .Root__nav-bar .main-rootlist-rootlist::before {
-  content: "Playlists";
-  visibility: visible;
-  width: unset;
-  height: unset;
-  line-height: unset;
-  display: block;
-  font-size: 14px;
-  text-align: center;
-  font-weight: 700;
-  color: var(--spice-sidebar-text);
-  padding: 18px 8px 8px 8px;
+
+/* Added/Changed */
+
+.main-entityHeader-shadow,
+.main-contextMenu-menu,
+.connect-device-list-container {
+    box-shadow: 0 4px 20px #21212130;
+	background: var(--spice-sidebar);
 }
 
-.main-type-viola {
-    font-size: 12px;
-    font-weight: 400;
-    letter-spacing: normal;
-    line-height: 14px;
-    text-transform: none;
+.main-rootlist-rootlistItemLink.main-rootlist-rootlistItemLinkActive {
+    background: var(--spice-sidebar);
+    border-radius: 4px;
 }
 
-.main-trackList-trackListHeaderStuck.main-trackList-trackListHeader {
-    background: var(--spice-main);
-    border-bottom: 1px solid rgba(255,255,255,.1);
-    -webkit-box-shadow: 0 -1px 0 0 var(--spice-main);
-    box-shadow: 0 -1px 0 0 var(--spice-main);
+.main-navBar-navBarLinkActive {
+    background: var(--spice-sidebar);
 }
 
-.main-trackList-rowImage {
-    width: 30px;
-    aspect-ratio: auto 30 / 30;
-    height: 30px;
+.main-contextMenu-menu {
+    background-color: var(--spice-sidebar);
 }
 
-.main-trackList-trackListRow {
-    border: 1px solid transparent;
-    border-radius: 2px;
+.main-contextMenu-menuHeading,
+.main-contextMenu-menuItemButton,
+.main-contextMenu-menuItemButton:not(.main-contextMenu-disabled):focus,
+.main-contextMenu-menuItemButton:not(.main-contextMenu-disabled):hover {
+    color: var(--spice-sidebar-text);
+}
+
+.main-nowPlayingBar-container {
+    border-radius: 0 0 var(--main-corner-radius) var(--main-corner-radius);
+    background-color: unset;
+    background: radial-gradient(ellipse at right 50% bottom -80px, rgba(var(--spice-rgb-button), 0.55), var(--spice-player-bar) 60%);
+    border-top: 0;
+    min-width: 518px;
+}
+
+.main-connectBar-connectBar {
+    border-radius: 0 0 var(--main-corner-radius) var(--main-corner-radius);
+    border: 2px solid var(--spice-sidebar);
+    border-top: 0;
+    color: var(--spice-sidebar-text);
+}
+
+.main-navBar-navBarItem {
+    padding: 0 20px;
+}
+
+.main-rootlist-expandArrow {
+    position: absolute;
+    top: 1px;
+    right: 14px;
+    width: 14px;
+    height: 14px;
+    color: var(--spice-sidebar-text) !important;
+/*  background-color: var(--spice-sidebar);
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px var(--spice-sidebar);*/
+    opacity: 0;
+}
+
+.main-rootlist-rootlistItem a {
+    align-items: center;
+    border-radius: 4px;
+    display: flex;
+    height: 16px;
+    padding: 0 16px;	
+}
+
+img.playlist-picture {
+	display: none;
+    width: 14px;
+    height: 14px;
+    flex: 0 0 14px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+.main-rootlist-rootlistItem a span {
+    margin-left: 0px;
+}
+
+.main-navBar-navBarLink {
+    padding: 8px 16px 8px 0;
+    height: 25px;
+}
+
+.main-navBar-navBarItem .home-icon,
+.main-navBar-navBarItem .search-icon,
+.main-navBar-navBarItem .collection-icon {
+	flex: 0 0 auto;
+    margin-right: 8px;
+	fill: var(--spice-text);
+}
+
+.main-navBar-navBarItem .home-active-icon,
+.main-navBar-navBarItem .collection-active-icon,
+.main-navBar-navBarItem .search-active-icon {
+    flex: 0 0 auto;
+    margin-right: 8px;
+	fill: var(--spice-text);
+}
+
+.spotify__container--is-desktop:not(.fullscreen).spotify__os--is-windows .main-navBar-entryPoints {
+    padding-top: 40px;
+}
+
+.spotify__os--is-windows .main-buddyFeed-header {
+    padding-top: 32px;
+}
+
+.main-createPlaylistButton-icon,
+.main-collectionLinkButton-icon,
+.main-createPlaylistButton-icon {
     height: 32px;
-    position: relative;
-	
 }
 
-h1 {
-	font-weight: 700 !important;
-	font-size: 18px !important;
-	line-height: 20px !important;
+.main-likedSongsButton-likedSongsIcon svg {
+	fill: var(--spice-button);
+    width: 32px;
+    height: 32px;
 }
 
-h2 {
-	font-size: 10px !important;
-	line-height: 12px !important;
-	font-weight: 300 !important;
+
+.main-yourEpisodesButton-yourEpisodesIcon svg,
+.main-createPlaylistButton-createPlaylistIcon svg {
+    fill: var(--spice-text);
+    width: 32px;
+    height: 32px;
+}
+/*.main-yourEpisodesButton-yourEpisodesIcon svg path {
+    fill: var(--spice-text);
+}*/
+
+div.GlueDropTarget.personal-library  {
+    padding: 0 20px;
+}
+div.GlueDropTarget.personal-library >* {
+    padding: 8px 16px 8px 0;
+    height: 25px;
+    border-radius: 4px;
 }
 
-.Tw1hKrjBKfQ_pw0kniU1 {
-    height: 80px;
-    min-width: 80px;
-    width: 80px;
+div.GlueDropTarget.personal-library >*.active {
+    background: var(--spice-sidebar);
 }
 
-.ocmGJ8quvjGdzLNJ4wUr {
-    height: 80px;
-    min-width: 80px;
-    width: 80px;
+.connect-device-list-item {
+    background-color: var(--spice-sidebar);
 }
 
-.AE3YvDMBoZwW9PntCp3W {
-    height: 80px;
-    min-width: 80px;
-    width: 80px;
+:root .Root__nav-bar .main-rootlist-rootlist::before {
+    content: "Playlists";
+    visibility: visible;
+    width: unset;
+    height: unset;
+    line-height: unset;
+    display: block;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 700;
+    color: var(--spice-sidebar-text);
+    padding: 18px 8px 8px 8px;
+  }
+  
+  .main-type-viola {
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: normal;
+      line-height: 14px;
+      text-transform: none;
+  }
+  
+  .main-trackList-trackListHeaderStuck.main-trackList-trackListHeader {
+      background: var(--spice-main);
+      border-bottom: 1px solid rgba(255,255,255,.1);
+      -webkit-box-shadow: 0 -1px 0 0 var(--spice-main);
+      box-shadow: 0 -1px 0 0 var(--spice-main);
+  }
+  
+  .main-trackList-rowImage {
+      width: 30px;
+      aspect-ratio: auto 30 / 30;
+      height: 30px;
+  }
+  
+  .main-trackList-trackListRow {
+      border: 1px solid transparent;
+      border-radius: 2px;
+      height: 32px;
+      position: relative;
+      
+  }
+  
+  h1 {
+      font-weight: 700 !important;
+      font-size: 18px !important;
+      line-height: 20px !important;
+  }
+  
+  h2 {
+      font-size: 10px !important;
+      line-height: 12px !important;
+      font-weight: 300 !important;
+  }
+  
+  .Tw1hKrjBKfQ_pw0kniU1 {
+      height: 80px;
+      min-width: 80px;
+      width: 80px;
+  }
+  
+  .ocmGJ8quvjGdzLNJ4wUr {
+      height: 80px;
+      min-width: 80px;
+      width: 80px;
+  }
+  
+  .AE3YvDMBoZwW9PntCp3W {
+      height: 80px;
+      min-width: 80px;
+      width: 80px;
+  }
+  
+  .wGpZnoBC5qWDEQp2SAdS {
+      -ms-flex-item-align: end;
+      -webkit-margin-end: 24px;
+      align-self: flex-end;
+      height: 80px;
+      margin-inline-end: 24px;
+      min-width: 80px;
+      width: 80px;
+  }
+  
+  .main-entityHeader-container.main-entityHeader-nonWrapped {
+      height: 30vh;
+      max-height: 160px;
+      min-height: 160px;
+  }
+  
+  .main-type-ballad {
+      font-size: 12px;
+      line-height: 14px;
+      font-weight: 500;
+  }
+  
+  .main-type-mesto {
+      font-size: 11px;
+      line-height: 13px;
+      
+  }
+  
+  .main-playPauseButton-button svg {
+      width: 32px !important;
+      height: 32px !important;
+      color: var(--spice-button);
+  }
+  
+  .main-entityHeader-imageContainer {
+      height: 80px;
+      width: 80px;
+  }
+  
+  .main-actionBar-ActionBar {
+      padding-bottom: 0px;
+      padding-top: 19px;
+  }
+  
+  .main-entityHeader-withBackgroundImage .main-entityHeader-headerText {
+    /*justify-content: center;*/
 }
 
-.wGpZnoBC5qWDEQp2SAdS {
-    -ms-flex-item-align: end;
-    -webkit-margin-end: 24px;
-    align-self: flex-end;
-    height: 80px;
-    margin-inline-end: 24px;
-    min-width: 80px;
-    width: 80px;
-}
-
-.main-entityHeader-container.main-entityHeader-nonWrapped {
-    height: 30vh;
-    max-height: 160px;
-    min-height: 160px;
-}
-
-.main-type-ballad {
-    font-size: 12px;
-	line-height: 14px;
-	font-weight: 500;
-}
-
-.main-type-mesto {
-	font-size: 11px;
-    line-height: 13px;
-	
-}
-
-.main-playPauseButton-button svg {
-    width: 32px !important;
-    height: 32px !important;
-    color: var(--spice-button);
-}
-
-.main-entityHeader-imageContainer {
-    height: 80px;
-    width: 80px;
-}
-
-.main-actionBar-ActionBar {
-    padding-bottom: 0px;
-    padding-top: 19px;
+.main-buddyFeed-friendActivity {
+    display: flex;
+    padding: 1px 16px 4px 16px;
 }
